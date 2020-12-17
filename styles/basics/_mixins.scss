@@ -1,0 +1,6 @@
+@mixin tablet-landscape-breakpoint {
+    @media (min-width: 640px) {@content}
+};  
+@mixin laptop-breakpoint {
+    @media (min-width: 752px) {@content}
+};  

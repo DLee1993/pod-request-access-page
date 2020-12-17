@@ -1,0 +1,21 @@
+.request-access-form{
+    margin-top: 50px;
+    & input {
+        background-color: $blue-grey;
+        color: white;
+        border: none;
+        height: 46px;
+        width: 320px;
+        border-radius: 30px;
+        text-indent: 20px;
+        outline: none;
+
+        &::placeholder{
+            color: white;
+        }
+
+        @include tablet {
+            width: 427px;
+        }
+    }
+}

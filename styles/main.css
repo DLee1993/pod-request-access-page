@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap");
+.request-access-form {
+  margin-top: 50px;
+}
+
+.request-access-form input {
+  background-color: #5A668A;
+  color: white;
+  border: none;
+  height: 46px;
+  width: 320px;
+  border-radius: 30px;
+  text-indent: 20px;
+  outline: none;
+}
+
+.request-access-form input::-webkit-input-placeholder {
+  color: white;
+}
+
+.request-access-form input:-ms-input-placeholder {
+  color: white;
+}
+
+.request-access-form input::-ms-input-placeholder {
+  color: white;
+}
+
+.request-access-form input::placeholder {
+  color: white;
+}
+
+@media (min-width: 426px) {
+  .request-access-form input {
+    width: 427px;
+  }
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.request-btn {
+  background-color: #54E6AF;
+  border: none;
+  height: 46px;
+  width: 320px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 38px;
+  margin-top: 15px;
+  -webkit-transition: background-color ease-in-out .5s;
+  transition: background-color ease-in-out .5s;
+}
+
+.request-btn:hover {
+  cursor: pointer;
+  background-color: #B3FFE2;
+  -webkit-transition: background-color ease-in-out .5s;
+  transition: background-color ease-in-out .5s;
+}
+
+@media (min-width: 426px) {
+  .request-btn {
+    width: 162px;
+  }
+}
+
+.spotify {
+  width: 96px;
+  height: 29px;
+  padding: 0px 10px;
+}
+
+.apple {
+  width: 78px;
+  height: 29px;
+  padding: 0px 10px;
+}
+
+.google {
+  width: 125px;
+  height: 18px;
+  padding: 0px 10px;
+}
+
+.podcast {
+  width: 129px;
+  height: 26px;
+  padding: 0px 10px;
+}
+
+.logo {
+  width: 135px;
+  height: 56px;
+}
+
+.bg-pattern {
+  width: 232px;
+  height: 104px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: "Chivo", "sans-serif";
+}
+
+.text-box {
+  background-color: #121725;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/mobile/image-host.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-blend-mode: soft-light;
+  text-align: center;
+}
+
+@media (min-width: 426px) {
+  .text-box {
+    background-image: url("../assets/mobile/image-host.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-blend-mode: normal;
+  }
+}
+
+.logo {
+  margin: auto;
+  padding: 62px 0px;
+}
+
+.title {
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 74px 0px 50px 0px;
+}
+
+.title span {
+  color: #54E6AF;
+}
+
+.sub-text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@media (min-width: 321px) {
+  .sub-text {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 376px) {
+  .sub-text {
+    width: 80%;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */

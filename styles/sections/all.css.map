@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "all.scss",
+        "_index.scss"
+    ],
+    "names": [],
+    "file": "all.css"
+}

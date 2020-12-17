@@ -1,0 +1,27 @@
+button{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.request-btn{
+    background-color: $lime-green;
+    border: none;
+    height: 46px;
+    width: 320px;
+    border-radius: 30px;
+    font-weight: $ff-bold;
+    font-size: $text-size-S;
+    line-height: $line-height-S;
+    margin-top: 15px;
+    transition: background-color ease-in-out .5s;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $light-green;
+        transition: background-color ease-in-out .5s;
+    }
+
+    @include tablet {
+        width: 162px;
+    }
+}

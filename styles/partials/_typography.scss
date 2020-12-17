@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap');
+
+//font-family
+$ff-ss: "Chivo", "sans-serif"; 
+
+//font-weights for text
+$ff-light: 300;
+$ff-bold: 700;
+
+
+//small screen font size and line height for title
+$title-size-S: 26px;
+$line-height-S: 38px;
+
+//tablet screen font size and line height for title
+$title-size-M: 48px;
+$line-height-M: 56px;
+
+//laptop and up screen font size and line height for title
+$title-size-L: 52px;
+$line-height-L: 62px;
+
+//
+$text-size-S: 15px;
+$text-line-height-s: 25px;
+$text-size-M: 18px;
+$text-size-L: 21px;
+$text-line-height-M-L: 28px;
