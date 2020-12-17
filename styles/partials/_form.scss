@@ -16,6 +16,15 @@
 
         @include tablet {
             width: 427px;
+            height: 56px;
         }
     }
+}
+
+.email-error{
+    color: $error;
+    font-weight: $ff-bold;
+    width: 282px;
+    text-align: left;
+    margin: auto;
 }

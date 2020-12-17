@@ -33,7 +33,16 @@
 @media (min-width: 426px) {
   .request-access-form input {
     width: 427px;
+    height: 56px;
   }
+}
+
+.email-error {
+  color: #FB3E3E;
+  font-weight: 700;
+  width: 282px;
+  text-align: left;
+  margin: auto;
 }
 
 button {
@@ -136,6 +145,12 @@ body {
   }
 }
 
+@media (min-width: 769px) {
+  .text-box {
+    display: none;
+  }
+}
+
 .logo {
   margin: auto;
   padding: 62px 0px;
@@ -146,7 +161,7 @@ body {
   line-height: 38px;
   font-weight: 300;
   text-transform: uppercase;
-  padding: 74px 0px 50px 0px;
+  padding: 64px 0px 50px 0px;
 }
 
 .title span {

@@ -28,6 +28,9 @@ body{
         background-position: right;
         background-blend-mode: normal;
     }
+    @include laptop{
+        display: none;
+    }
 
 }
 
@@ -40,7 +43,7 @@ body{
     line-height: $line-height-S;
     font-weight: $ff-light;
     text-transform: uppercase;
-    padding: 74px 0px 50px 0px;
+    padding: 64px 0px 50px 0px;
 
     & span{
         color: $lime-green;
