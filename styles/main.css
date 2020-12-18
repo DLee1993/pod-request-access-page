@@ -38,6 +38,7 @@
 }
 
 .email-error {
+  display: none;
   color: #FB3E3E;
   font-weight: 700;
   width: 282px;
@@ -130,7 +131,8 @@ body {
   width: 100%;
   background-image: url("../assets/mobile/image-host.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 450px 720px;
+  background-position-x: 50%;
   background-blend-mode: soft-light;
   text-align: center;
 }
