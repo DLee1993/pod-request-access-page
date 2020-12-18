@@ -1,5 +1,6 @@
 @import "partials/all"; 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +21,7 @@ body{
     background-size: cover;
     background-blend-mode: soft-light;
     text-align: center;
+    overflow-y: hidden;
 
     @include tablet {
         background-image: url("../assets/mobile/image-host.jpg");
@@ -28,6 +30,7 @@ body{
         background-position: right;
         background-blend-mode: normal;
     }
+
     @include laptop{
         display: none;
     }

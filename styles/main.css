@@ -134,6 +134,7 @@ body {
   background-size: cover;
   background-blend-mode: soft-light;
   text-align: center;
+  overflow-y: hidden;
 }
 
 @media (min-width: 426px) {
