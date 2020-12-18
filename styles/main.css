@@ -129,10 +129,9 @@ body {
   background-color: #121725;
   height: 100vh;
   width: 100%;
-  background-image: url("../assets/mobile/image-host.jpg");
+  background-image: url("../assets/tablet/image-host.jpg");
   background-repeat: no-repeat;
-  background-size: 450px 720px;
-  background-position-x: 50%;
+  background-size: cover;
   background-blend-mode: soft-light;
   text-align: center;
 }
