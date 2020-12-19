@@ -9,7 +9,7 @@
         border: 0;
         width: 280px;
         height: 46px;
-        background-color: $martinique;
+        background-color: $blue-grey;
         border-radius: 50px;
         color: white;
 
@@ -27,7 +27,7 @@
     }
 }
 
-@include tablet-landscape-breakpoint {
+@include tablet {
     .request-form {
         & #email {
             width: 430px;

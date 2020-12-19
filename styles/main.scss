@@ -1,65 +1,9 @@
 @import "partials/all"; 
+@import "sections/all"; 
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
-    color: white;
-    font-family: $ff-ss;
-    background-color: $dark-navy;
-    background-image: url("./assets/mobile/image-host.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: soft-light;
-    text-align: center;
-    height: 759px;
-
-    @include tablet {
-        background-image: url("../assets/mobile/image-host.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: right;
-        background-blend-mode: normal;
-    }
-
-    @include laptop{
-        display: none;
-    }
-
-}
-
-.logo{
-    margin: auto;
-    padding: 62px 0px;
-}
-.title{
-    font-size: $title-size-S;
-    line-height: $line-height-S;
-    font-weight: $ff-light;
-    text-transform: uppercase;
-    padding: 64px 0px 50px 0px;
-
-    & span{
-        color: $lime-green;
-    }
-}
-.sub-text{
-    font-weight: $ff-light;
-    font-size: $text-size-S;
-    line-height: $text-line-height-s;
-    padding-top: 100px;
-
-    @include mobile-M {
-        width: 85%;
-        margin: auto;
-    }
-
-    @include mobile-L {
-        width: 80%;
-        margin: auto;
-    }
 }

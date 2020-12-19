@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap");
 .request-access-form {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .request-access-form input {
@@ -28,13 +28,6 @@
 
 .request-access-form input::placeholder {
   color: white;
-}
-
-@media (min-width: 426px) {
-  .request-access-form input {
-    width: 427px;
-    height: 56px;
-  }
 }
 
 .email-error {
@@ -73,34 +66,24 @@ button {
   transition: background-color ease-in-out .5s;
 }
 
-@media (min-width: 426px) {
-  .request-btn {
-    width: 162px;
-  }
-}
-
 .spotify {
   width: 96px;
   height: 29px;
-  padding: 0px 10px;
 }
 
 .apple {
   width: 78px;
   height: 29px;
-  padding: 0px 10px;
 }
 
 .google {
   width: 125px;
   height: 18px;
-  padding: 0px 10px;
 }
 
 .podcast {
   width: 129px;
   height: 26px;
-  padding: 0px 10px;
 }
 
 .logo {
@@ -113,76 +96,64 @@ button {
   height: 104px;
 }
 
+body {
+  height: 100vh;
+  background-color: #121725;
+  background-image: url("../assets/mobile/image-host.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: overlay;
+  color: #C2CBE5;
+}
+
+.request-form {
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.request-form input {
+  padding-left: 20px;
+}
+
+.request-form #email {
+  border: 0;
+  width: 280px;
+  height: 46px;
+  background-color: #5A668A;
+  border-radius: 50px;
+  color: white;
+}
+
+.request-form #email:focus {
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+
+.request-form .email-error {
+  display: none;
+  color: #FB3E3E;
+  padding-left: 18px;
+  margin: 0;
+}
+
+@media (min-width: 426px) {
+  .request-form #email {
+    width: 430px;
+  }
+  form {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    margin: 50px 40px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
-  color: white;
-  font-family: "Chivo", "sans-serif";
-  background-color: #121725;
-  background-image: url("./assets/mobile/image-host.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: soft-light;
-  text-align: center;
-  height: 759px;
-}
-
-@media (min-width: 426px) {
-  body {
-    background-image: url("../assets/mobile/image-host.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    background-blend-mode: normal;
-  }
-}
-
-@media (min-width: 769px) {
-  body {
-    display: none;
-  }
-}
-
-.logo {
-  margin: auto;
-  padding: 62px 0px;
-}
-
-.title {
-  font-size: 26px;
-  line-height: 38px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding: 64px 0px 50px 0px;
-}
-
-.title span {
-  color: #54E6AF;
-}
-
-.sub-text {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 25px;
-  padding-top: 100px;
-}
-
-@media (min-width: 321px) {
-  .sub-text {
-    width: 85%;
-    margin: auto;
-  }
-}
-
-@media (min-width: 376px) {
-  .sub-text {
-    width: 80%;
-    margin: auto;
-  }
 }
 /*# sourceMappingURL=main.css.map */

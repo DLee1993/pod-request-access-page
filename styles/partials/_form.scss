@@ -1,5 +1,5 @@
 .request-access-form{
-    margin-top: 100px;
+    margin-top: 50px;
     & input {
         background-color: $blue-grey;
         color: white;
@@ -12,11 +12,6 @@
 
         &::placeholder{
             color: white;
-        }
-
-        @include tablet {
-            width: 427px;
-            height: 56px;
         }
     }
 }
