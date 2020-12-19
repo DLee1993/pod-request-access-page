@@ -127,6 +127,7 @@ body {
   background-image: url("../assets/mobile/image-host.jpg");
   background-repeat: no-repeat;
   background-size: 425px;
+  background-position-y: -20%;
   background-blend-mode: soft-light;
   text-align: center;
 }
