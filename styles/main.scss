@@ -11,12 +11,12 @@ body{
     color: white;
     font-family: $ff-ss;
     background-color: $dark-navy;
-    background-image: url("../assets/mobile/image-host.jpg");
+    background-image: url("./assets/mobile/image-host.jpg");
     background-repeat: no-repeat;
-    background-size: 425px;
-    background-position-y: -20%;
+    background-size: cover;
     background-blend-mode: soft-light;
     text-align: center;
+    height: 759px;
 
     @include tablet {
         background-image: url("../assets/mobile/image-host.jpg");
@@ -51,6 +51,7 @@ body{
     font-weight: $ff-light;
     font-size: $text-size-S;
     line-height: $text-line-height-s;
+    padding-top: 100px;
 
     @include mobile-M {
         width: 85%;
