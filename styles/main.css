@@ -124,11 +124,9 @@ body {
   color: white;
   font-family: "Chivo", "sans-serif";
   background-color: #121725;
-  width: auto;
-  height: 800px;
   background-image: url("../assets/mobile/image-host.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 500px 800px;
   background-blend-mode: soft-light;
   text-align: center;
 }
