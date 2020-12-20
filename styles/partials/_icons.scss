@@ -1,26 +1,50 @@
 .spotify{
-    width: 96px;
-    height: 29px;
+    width: 56px;
+    height: 17px;
 }
 .apple{
-    width: 78px;
-    height: 29px;
+    width: 46px;
+    height: 17px;
 }
 .google{
-    width: 125px;
-    height: 18px;
+    width: 73px;
+    height: 11px;
 }
 .podcast{
-    width: 129px;
-    height: 26px;
+    width: 77px;
+    height: 15px;
 }
 
-.logo{
-    width: 135px;
-    height: 56px;
+.logo-icon{
+    width: 96px;
+    height: 40px;
 }
 
-.bg-pattern{
-    width: 232px;
-    height: 104px;
+@include tablet {
+    .spotify{
+        width: 96px;
+        height: 29px;
+    }
+    .apple{
+        width: 78px;
+        height: 29px;
+    }
+    .google{
+        width: 125px;
+        height: 18px;
+    }
+    .podcast{
+        width: 129px;
+        height: 26px;
+    }
+    
+    .logo{
+        width: 135px;
+        height: 56px;
+    }
+    
+    .bg-pattern{
+        width: 232px;
+        height: 104px;
+    }
 }

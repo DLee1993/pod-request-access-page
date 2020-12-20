@@ -20,4 +20,8 @@ button{
         background-color: $light-green;
         transition: background-color ease-in-out .5s;
     }
+
+    @include tablet {
+        width: 150px;
+    }
 }

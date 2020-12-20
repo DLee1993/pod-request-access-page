@@ -13,6 +13,9 @@
         &::placeholder{
             color: white;
         }
+        @include tablet {
+            width: 400px; 
+        }
     }
 }
 

@@ -30,6 +30,12 @@
   color: white;
 }
 
+@media (min-width: 426px) {
+  .request-access-form input {
+    width: 400px;
+  }
+}
+
 .email-error {
   display: none;
   color: #FB3E3E;
@@ -66,88 +72,122 @@ button {
   transition: background-color ease-in-out .5s;
 }
 
+@media (min-width: 426px) {
+  .request-btn {
+    width: 150px;
+  }
+}
+
 .spotify {
-  width: 96px;
-  height: 29px;
+  width: 56px;
+  height: 17px;
 }
 
 .apple {
-  width: 78px;
-  height: 29px;
+  width: 46px;
+  height: 17px;
 }
 
 .google {
-  width: 125px;
-  height: 18px;
+  width: 73px;
+  height: 11px;
 }
 
 .podcast {
-  width: 129px;
-  height: 26px;
+  width: 77px;
+  height: 15px;
 }
 
-.logo {
-  width: 135px;
-  height: 56px;
+.logo-icon {
+  width: 96px;
+  height: 40px;
 }
 
-.bg-pattern {
-  width: 232px;
-  height: 104px;
+@media (min-width: 426px) {
+  .spotify {
+    width: 96px;
+    height: 29px;
+  }
+  .apple {
+    width: 78px;
+    height: 29px;
+  }
+  .google {
+    width: 125px;
+    height: 18px;
+  }
+  .podcast {
+    width: 129px;
+    height: 26px;
+  }
+  .logo {
+    width: 135px;
+    height: 56px;
+  }
+  .bg-pattern {
+    width: 232px;
+    height: 104px;
+  }
 }
 
 body {
-  height: 100vh;
+  font-family: "Chivo", "sans-serif";
   background-color: #121725;
-  background-image: url("../assets/mobile/image-host.jpg");
+  background-image: url("./assets/mobile/image-host.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-blend-mode: overlay;
   color: #C2CBE5;
-}
-
-.request-form {
-  color: white;
   text-align: center;
-  margin-top: 40px;
-}
-
-.request-form input {
-  padding-left: 20px;
-}
-
-.request-form #email {
-  border: 0;
-  width: 280px;
-  height: 46px;
-  background-color: #5A668A;
-  border-radius: 50px;
-  color: white;
-}
-
-.request-form #email:focus {
-  outline: 0;
-  outline-color: transparent;
-  outline-style: none;
-}
-
-.request-form .email-error {
-  display: none;
-  color: #FB3E3E;
-  padding-left: 18px;
-  margin: 0;
 }
 
 @media (min-width: 426px) {
-  .request-form #email {
-    width: 430px;
+  body {
+    background-image: url("./assets/tablet/image-host.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    background-blend-mode: normal;
   }
-  form {
-    position: absolute;
-    top: 80%;
-    left: 0;
-    margin: 50px 40px;
-  }
+}
+
+.logo {
+  margin: 40px auto;
+}
+
+.content {
+  margin: 50px auto;
+  width: 327px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 38px;
+  width: 327px;
+  margin: auto;
+}
+
+.title span {
+  color: #54E6AF;
+}
+
+.sub-text {
+  margin: 50px 0px;
+  font-size: 15px;
+}
+
+.mobile-social-media-list {
+  width: 100%;
+}
+
+.mobile-social-media-list img {
+  margin: 0px 5px;
+}
+
+.tablet-desktop-media-list {
+  display: none;
 }
 
 * {
