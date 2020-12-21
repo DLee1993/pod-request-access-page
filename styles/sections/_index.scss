@@ -7,14 +7,6 @@ body{
     background-blend-mode: overlay;
     color: $light-grey;
     text-align: center;
-
-    @include tablet {
-        background-image: url("./assets/tablet/image-host.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-x: right;
-        background-blend-mode: normal;
-    }
 } 
 
 .logo {
@@ -54,4 +46,57 @@ body{
 
 .tablet-desktop-media-list{
     display: none;
+}
+
+
+
+//tablet breakpoint 
+
+@include tablet {
+    body {
+        background-image: url("./assets/tablet/image-host.jpg"), url("./assets/desktop/bg-pattern-dots.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 300px, 150px;
+        background-position-x: right, left;
+        background-position-y: top, bottom;
+        background-blend-mode: normal;
+        height: 93vh;
+    }
+    .content {
+        margin: 50px 0px 0px 40px;
+        text-align: left;
+        background-color: $dark-navy;
+        width: 80%;
+    }
+
+    .logo{
+        margin: 30px 20px;
+    }
+
+    .title{
+        margin: 0px;
+    }
+
+    .sub-text {
+        max-width: 85%;
+        margin: 30px 0px;
+    }
+
+    .mobile-social-media-list{
+        display: none;
+    }
+    
+    .tablet-desktop-media-list{
+        display: block;
+
+        & img {
+            margin: 15px 10px;
+        }
+    }
+}
+
+@include laptop {
+    body {
+        display: none;
+    }
 }

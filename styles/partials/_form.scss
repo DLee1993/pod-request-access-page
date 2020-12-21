@@ -13,9 +13,6 @@
         &::placeholder{
             color: white;
         }
-        @include tablet {
-            width: 400px; 
-        }
     }
 }
 
@@ -26,4 +23,23 @@
     width: 282px;
     text-align: left;
     margin: auto;
+}
+
+
+//tablet breakpoints 
+
+
+@include tablet {
+    .request-access-form{
+        margin: 40px 0px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+        & input {
+            outline: none;
+            width: 85%;  
+            height: 56px; 
+        }
+    }
 }

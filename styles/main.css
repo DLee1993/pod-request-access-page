@@ -30,12 +30,6 @@
   color: white;
 }
 
-@media (min-width: 426px) {
-  .request-access-form input {
-    width: 400px;
-  }
-}
-
 .email-error {
   display: none;
   color: #FB3E3E;
@@ -45,10 +39,34 @@
   margin: auto;
 }
 
+@media (min-width: 451px) {
+  .request-access-form {
+    margin: 40px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .request-access-form input {
+    outline: none;
+    width: 85%;
+    height: 56px;
+  }
+}
+
 button {
   margin: 0;
   padding: 0;
   outline: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .request-btn {
@@ -72,9 +90,12 @@ button {
   transition: background-color ease-in-out .5s;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 451px) {
   .request-btn {
-    width: 150px;
+    margin: 0px 0px 0px -168px;
+    width: 162px;
+    position: -webkit-sticky;
+    position: sticky;
   }
 }
 
@@ -103,7 +124,7 @@ button {
   height: 40px;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 451px) {
   .spotify {
     width: 96px;
     height: 29px;
@@ -139,16 +160,6 @@ body {
   background-blend-mode: overlay;
   color: #C2CBE5;
   text-align: center;
-}
-
-@media (min-width: 426px) {
-  body {
-    background-image: url("./assets/tablet/image-host.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: right;
-    background-blend-mode: normal;
-  }
 }
 
 .logo {
@@ -188,6 +199,49 @@ body {
 
 .tablet-desktop-media-list {
   display: none;
+}
+
+@media (min-width: 451px) {
+  body {
+    background-image: url("./assets/tablet/image-host.jpg"), url("./assets/desktop/bg-pattern-dots.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 300px, 150px;
+    background-position-x: right, left;
+    background-position-y: top, bottom;
+    background-blend-mode: normal;
+    height: 93vh;
+  }
+  .content {
+    margin: 50px 0px 0px 40px;
+    text-align: left;
+    background-color: #121725;
+    width: 80%;
+  }
+  .logo {
+    margin: 30px 20px;
+  }
+  .title {
+    margin: 0px;
+  }
+  .sub-text {
+    max-width: 85%;
+    margin: 30px 0px;
+  }
+  .mobile-social-media-list {
+    display: none;
+  }
+  .tablet-desktop-media-list {
+    display: block;
+  }
+  .tablet-desktop-media-list img {
+    margin: 15px 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    display: none;
+  }
 }
 
 * {

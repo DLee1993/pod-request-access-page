@@ -2,6 +2,7 @@ button{
     margin: 0;
     padding: 0;
     outline: none;
+    width: fit-content;
 }
 .request-btn{
     background-color: $lime-green;
@@ -20,8 +21,15 @@ button{
         background-color: $light-green;
         transition: background-color ease-in-out .5s;
     }
+}
 
-    @include tablet {
-        width: 150px;
+
+//tablet breakpoint 
+
+@include tablet {
+    .request-btn{
+        margin: 0px 0px 0px -168px;
+        width: 162px;
+        position: sticky;
     }
 }

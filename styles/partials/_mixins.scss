@@ -7,7 +7,7 @@
 }; 
 
 @mixin tablet {
-    @media (min-width: 426px){@content}
+    @media (min-width: 451px){@content}
 };
 
 @mixin laptop {
