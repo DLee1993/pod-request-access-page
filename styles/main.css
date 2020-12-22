@@ -39,7 +39,7 @@
   margin: auto;
 }
 
-@media (min-width: 451px) {
+@media (min-width: 425px) {
   .request-access-form {
     margin: 40px 0px;
     display: -webkit-box;
@@ -90,7 +90,7 @@ button {
   transition: background-color ease-in-out .5s;
 }
 
-@media (min-width: 451px) {
+@media (min-width: 425px) {
   .request-btn {
     margin: 0px 0px 0px -168px;
     width: 162px;
@@ -124,7 +124,7 @@ button {
   height: 40px;
 }
 
-@media (min-width: 451px) {
+@media (min-width: 425px) {
   .spotify {
     width: 96px;
     height: 29px;
@@ -156,10 +156,12 @@ body {
   background-color: #121725;
   background-image: url("./assets/mobile/image-host.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 105vh;
   background-blend-mode: overlay;
   color: #C2CBE5;
   text-align: center;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .logo {
@@ -201,15 +203,14 @@ body {
   display: none;
 }
 
-@media (min-width: 451px) {
+@media (min-width: 425px) {
   body {
     background-image: url("./assets/tablet/image-host.jpg"), url("./assets/desktop/bg-pattern-dots.svg");
     background-repeat: no-repeat, no-repeat;
-    background-size: 300px, 150px;
+    background-size: 300px, 200px;
     background-position-x: right, left;
-    background-position-y: top, bottom;
+    background-position-y: top, 90%;
     background-blend-mode: normal;
-    height: 93vh;
   }
   .content {
     margin: 50px 0px 0px 40px;
@@ -240,7 +241,15 @@ body {
 
 @media (min-width: 769px) {
   body {
-    display: none;
+    background-image: url("./assets/desktop/bg-pattern-dots.svg"), url("./assets/desktop/image-host.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 250px, 500px;
+    background-position-x: right, right;
+    background-position-y: 80%, 30%;
+    background-blend-mode: normal;
+  }
+  .content {
+    width: 60%;
   }
 }
 

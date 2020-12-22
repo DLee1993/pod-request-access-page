@@ -3,10 +3,12 @@ body{
     background-color: $dark-navy;
     background-image: url("./assets/mobile/image-host.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 105vh;
     background-blend-mode: overlay;
     color: $light-grey;
     text-align: center;
+    height: 100vh;
+    overflow-y: hidden;
 } 
 
 .logo {
@@ -56,11 +58,10 @@ body{
     body {
         background-image: url("./assets/tablet/image-host.jpg"), url("./assets/desktop/bg-pattern-dots.svg");
         background-repeat: no-repeat, no-repeat;
-        background-size: 300px, 150px;
+        background-size: 300px, 200px;
         background-position-x: right, left;
-        background-position-y: top, bottom;
+        background-position-y: top, 90%;
         background-blend-mode: normal;
-        height: 93vh;
     }
     .content {
         margin: 50px 0px 0px 40px;
@@ -96,7 +97,15 @@ body{
 }
 
 @include laptop {
-    body {
-        display: none;
+    body{
+        background-image: url("./assets/desktop/bg-pattern-dots.svg"),url("./assets/desktop/image-host.jpg");
+        background-repeat: no-repeat, no-repeat;
+        background-size: 250px, 500px;
+        background-position-x: right, right;
+        background-position-y: 80%, 30%;
+        background-blend-mode: normal;
+    }
+    .content {
+        width: 60%;
     }
 }
